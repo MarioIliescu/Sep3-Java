@@ -1,13 +1,13 @@
-package dk.via;
+package dk.via.fleetforward;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Sep3JavaApplication {
+public class StartServer {
 
     public static void main(String[] args) {
-        SpringApplication.run(Sep3JavaApplication.class, args);
+        SpringApplication.run(StartServer.class, args);
     }
 
 }
