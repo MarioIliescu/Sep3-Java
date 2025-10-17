@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Optional;
 /**
  * Company service implementation for database operations
- * @implNote This class is a Spring component and is instantiated by Spring
- * @implNote This class is transactional (makes changes to the database)
+ * @implNote This class is a Spring component and is instantiated by Spring<br>
+ * This class is transactional (makes changes to the database)
  * @see CompanyService
  */
 @Service("database")
