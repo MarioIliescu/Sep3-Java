@@ -1,4 +1,4 @@
-package dk.via.fleetforward;
+package dk.via.fleetforward.startup;
 
 import dk.via.fleetforward.gRPC.Fleetforward.CompanyProto;
 import dk.via.fleetforward.services.company.CompanyService;
@@ -19,22 +19,22 @@ public class ManualTestingMain {
         // Get the CompanyService bean from Spring
         CompanyService companyService = context.getBean(CompanyServiceDatabase.class);
 
-//        // Create a test company
-//        CompanyProto company = CompanyProto.newBuilder()
-//                .setCompanyName("TestingSRL")
+        // Create a test company
+        CompanyProto company = CompanyProto.newBuilder()
+                .setCompanyName("TestingSRL")
+                .setMcNumber("JAVAISTES4")
+                .build();
+
+      companyService.create(company);
+
+//        // Update a test company
+//        CompanyProto company2 = CompanyProto.newBuilder()
+//                .setId(3)
+//                .setCompanyName("TestingSRLUpdated")
 //                .setMcNumber("JAVAISTES2")
 //                .build();
 //
-//      companyService.create(company);
-
-        // Update a test company
-        CompanyProto company2 = CompanyProto.newBuilder()
-                .setId(3)
-                .setCompanyName("TestingSRLUpdated")
-                .setMcNumber("JAVAISTES2")
-                .build();
-
-        companyService.update(company2);
+//        companyService.update(company2);
 //        // Fetch it back
 //        CompanyProto fetched = companyService.getSingle("JAVAISTEST");
 //        System.out.println("Fetched company: " + fetched.getCompanyName());

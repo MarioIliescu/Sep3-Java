@@ -16,7 +16,7 @@ import java.util.Optional;
 @Service("database")
 public class CompanyServiceDatabase implements CompanyService{
 
-    CompanyRepository companyRepository;
+    private final CompanyRepository companyRepository;
 
     /**
      * Constructor

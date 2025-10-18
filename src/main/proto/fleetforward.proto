@@ -41,3 +41,7 @@ message Response {
   StatusType status = 1;
   google.protobuf.Any payload = 2;
 }
+
+service FleetService {
+  rpc sendRequest (Request) returns (Response);
+}

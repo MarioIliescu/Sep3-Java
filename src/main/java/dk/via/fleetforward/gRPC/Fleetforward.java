@@ -2790,7 +2790,9 @@ public final class Fleetforward {
       "ION_DELETE\020\004\022\017\n\013ACTION_LIST\020\005*]\n\nStatusT" +
       "ype\022\022\n\016STATUS_UNKNOWN\020\000\022\r\n\tSTATUS_OK\020\001\022\020" +
       "\n\014STATUS_ERROR\020\002\022\032\n\026STATUS_INVALID_PAYLO" +
-      "AD\020\003b\006proto3"
+      "AD\020\0032d\n\014FleetService\022T\n\013sendRequest\022!.dk" +
+      ".via.fleetforward.gRPC.Request\032\".dk.via." +
+      "fleetforward.gRPC.Responseb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
