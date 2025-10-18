@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 /**
+ * @author Mario
+ * @version 1.0.0
  * Company service implementation for database operations
  * @implNote This class is a Spring component and is instantiated by Spring<br>
  * This class is transactional (makes changes to the database)
@@ -90,7 +92,7 @@ public class CompanyServiceDatabase implements CompanyService{
      * @implNote Optional is in case the company is not found in the database to ensure null safety.
      */
     @Override
-    public CompanyProto getSingle(Integer id) {
+    public CompanyProto getSingle(int id) {
         Optional<Company> fetched = companyRepository.findById(id); //null safety
         Company company = fetched.orElseThrow(() -> new RuntimeException("Company not found"));
         return CompanyProto.newBuilder()
@@ -119,7 +121,7 @@ public class CompanyServiceDatabase implements CompanyService{
      */
     @Override
     @Transactional
-    public void delete(Integer id) {
+    public void delete(int id) {
        companyRepository.deleteById(id);
     }
     /**

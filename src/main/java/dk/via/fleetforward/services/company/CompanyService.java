@@ -36,7 +36,7 @@ public interface CompanyService {
      * @param id The id of the company to get
      * @return The company or null if not found
      */
-    CompanyProto getSingle(Integer id);
+    CompanyProto getSingle(int id);
 
     /**
      * Delete a company by its mcNumber
@@ -48,7 +48,7 @@ public interface CompanyService {
      * Delete a company by its id
      * @param id The id of the company to delete
      */
-    void delete(Integer id);
+    void delete(int id);
 
     /**
      * Get all companies
