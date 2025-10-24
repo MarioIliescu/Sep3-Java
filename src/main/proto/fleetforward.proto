@@ -45,5 +45,5 @@ message Response {
 }
 
 service FleetService {
-  rpc sendRequest (Request) returns (Response);
+  rpc SendRequest (Request) returns (Response);
 }

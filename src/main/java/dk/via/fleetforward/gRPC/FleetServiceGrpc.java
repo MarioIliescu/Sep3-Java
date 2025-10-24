@@ -19,7 +19,7 @@ public final class FleetServiceGrpc {
       dk.via.fleetforward.gRPC.Fleetforward.Response> getSendRequestMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "sendRequest",
+      fullMethodName = SERVICE_NAME + '/' + "SendRequest",
       requestType = dk.via.fleetforward.gRPC.Fleetforward.Request.class,
       responseType = dk.via.fleetforward.gRPC.Fleetforward.Response.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
@@ -32,13 +32,13 @@ public final class FleetServiceGrpc {
           FleetServiceGrpc.getSendRequestMethod = getSendRequestMethod =
               io.grpc.MethodDescriptor.<dk.via.fleetforward.gRPC.Fleetforward.Request, dk.via.fleetforward.gRPC.Fleetforward.Response>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "sendRequest"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SendRequest"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   dk.via.fleetforward.gRPC.Fleetforward.Request.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   dk.via.fleetforward.gRPC.Fleetforward.Response.getDefaultInstance()))
-              .setSchemaDescriptor(new FleetServiceMethodDescriptorSupplier("sendRequest"))
+              .setSchemaDescriptor(new FleetServiceMethodDescriptorSupplier("SendRequest"))
               .build();
         }
       }

@@ -104,7 +104,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-            <!-- ✅ Protobuf Compiler Plugin -->
+            <!--Protobuf Compiler Plugin -->
             <plugin>
                 <groupId>com.github.os72</groupId>
                 <artifactId>protoc-jar-maven-plugin</artifactId>
@@ -116,7 +116,7 @@
                             <goal>run</goal>
                         </goals>
                         <configuration>
-                            <!-- ✅ FIX: Include built-in google protos -->
+                            <!-- FIX: Include built-in google protos -->
                             <includeStdTypes>true</includeStdTypes>
 
                             <!-- Your protobuf compiler version -->
@@ -127,7 +127,7 @@
                                 <include>src/main/proto</include>
                             </inputDirectories>
 
-                            <!-- ✅ Keep your existing output structure -->
+                            <!--Keep your existing output structure -->
                             <outputTargets>
                                 <outputTarget>
                                     <type>java</type>

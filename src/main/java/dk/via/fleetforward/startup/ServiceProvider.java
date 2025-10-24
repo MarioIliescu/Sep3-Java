@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @author Mario
  * @version 1.0.0
  * The ServiceProvider class is a Spring-managed service that acts as a provider for other services and handlers.
- * It provides instances of service classes and handlers through its methods, utilizing the Spring ApplicationContext
+ * It provides instances of service classes and handlers through its methods, using the Spring ApplicationContext
  * for dependency injection.
  */
 @Service

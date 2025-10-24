@@ -34,19 +34,31 @@ public class FleetMainHandler extends FleetServiceGrpc.FleetServiceImplBase {
      */
     @Override
     public void sendRequest(Request request, StreamObserver<Response> responseObserver) {
-        Response.Builder responseBuilder = Response.newBuilder();
+        try {
             // Route request based on HandlerType
             FleetNetworkHandler handler = switch (request.getHandler()) {
                 case HANDLER_COMPANY -> serviceProvider.getCompanyHandler();
                 default -> throw new IllegalArgumentException("Unknown handler type");
             };
-            //Message is the protobuf object, this was written in blood.
+            // Message is the protobuf object
             Message result = handler.handle(request.getAction(), request.getPayload());
+            // Only pack if not already an Any
+            Any payload;
+            if (result instanceof Any) {
+                payload = (Any) result;
+            } else {
+                payload = Any.pack(result);
+            }
+
             Response response = Response.newBuilder()
                     .setStatus(StatusType.STATUS_OK)
-                    .setPayload(Any.pack(result))//convert result to protobuf message
+                    .setPayload(payload)
                     .build();
-            sendResponseWithHandleException(responseObserver,response);
+            sendResponseWithHandleException(responseObserver, response);
+
+        } catch (Exception e) {
+            sendGrpcError(responseObserver, StatusType.STATUS_ERROR, e.getMessage());
+        }
     }
 
     /**
@@ -72,17 +84,24 @@ public class FleetMainHandler extends FleetServiceGrpc.FleetServiceImplBase {
      * @param responseObserver the observer to send the response to
      * @param response the response to send to the client
      */
-    private void sendResponseWithHandleException(StreamObserver<Response> responseObserver,Response response)
+    private void sendResponseWithHandleException(StreamObserver<Response> responseObserver, Response response)
     {
-            try {
-                responseObserver.onNext(response);
-                responseObserver.onCompleted();
-            } catch (ClassCastException e) {
-                sendGrpcError(responseObserver, StatusType.STATUS_INVALID_PAYLOAD, "Invalid request");
+        try {
+            responseObserver.onNext(response);
+        } catch (ClassCastException e) {
+            sendGrpcError(responseObserver, StatusType.STATUS_INVALID_PAYLOAD, "Invalid request");
+            return; // 🚫 don't call onCompleted again
+        } catch (Exception e) {
+            sendGrpcError(responseObserver, StatusType.STATUS_ERROR, e.getMessage());
+            return;
+        }
 
-            } catch (Exception e) {
-                sendGrpcError(responseObserver,StatusType.STATUS_ERROR, e.getMessage());
-            }
+        try {
+            responseObserver.onCompleted();
+        } catch (Exception e) {
+            System.err.println("Error completing gRPC response: " + e.getMessage());
+        }
     }
+
 }
 
