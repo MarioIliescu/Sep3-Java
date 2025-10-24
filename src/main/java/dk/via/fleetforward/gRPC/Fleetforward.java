@@ -3592,7 +3592,7 @@ public final class Fleetforward {
       "ON_DELETE\020\004\022\017\n\013ACTION_LIST\020\005*]\n\nStatusTy" +
       "pe\022\022\n\016STATUS_UNKNOWN\020\000\022\r\n\tSTATUS_OK\020\001\022\020\n" +
       "\014STATUS_ERROR\020\002\022\032\n\026STATUS_INVALID_PAYLOA" +
-      "D\020\0032d\n\014FleetService\022T\n\013sendRequest\022!.dk." +
+      "D\020\0032d\n\014FleetService\022T\n\013SendRequest\022!.dk." +
       "via.fleetforward.gRPC.Request\032\".dk.via.f" +
       "leetforward.gRPC.Responseb\006proto3"
     };

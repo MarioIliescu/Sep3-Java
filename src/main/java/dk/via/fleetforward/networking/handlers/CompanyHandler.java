@@ -63,13 +63,13 @@ public class CompanyHandler implements FleetNetworkHandler {
                 handleDelete(request);
             }
             case ActionType.ACTION_LIST -> {
-                proto = Any.pack((Message) companyService.getAll());
+                proto = companyService.getAll();
             }
             default -> {
                 throw new IllegalArgumentException("Invalid action type: " + actionType);
             }
         }
-        //sometimes it will return null, so we need to check for that
+        //sometimes it will return null, no need to check for that
         //in case of delete
       if (proto == null) {
         proto = CompanyProto.newBuilder().build();
@@ -95,8 +95,7 @@ public class CompanyHandler implements FleetNetworkHandler {
         } else if (!request.getMcNumber().isEmpty()) {
             return companyService.getSingle(request.getMcNumber());
         }
-        else
-        {
+        else {
             throw new IllegalArgumentException("Must provide either an ID or MC number for ACTION_GET.");
         }
     }
@@ -116,8 +115,7 @@ public class CompanyHandler implements FleetNetworkHandler {
         } else if (!request.getMcNumber().isEmpty()) {
             companyService.delete(request.getMcNumber());
         }
-        else
-        {
+        else {
             throw new IllegalArgumentException("Must provide either an ID or MC number for ACTION_DELETE.");
         }
     }
