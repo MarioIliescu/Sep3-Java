@@ -1,7 +1,7 @@
 package dk.via.fleetforward.networking.handlers;
 
 import com.google.protobuf.Message;
-import dk.via.fleetforward.gRPC.Fleetforward.ActionType;
+import dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,5 +9,5 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public interface FleetNetworkHandler {
-    Message handle(ActionType actionType, Object payload);
+    Message handle(ActionTypeProto actionType, Object payload);
 }

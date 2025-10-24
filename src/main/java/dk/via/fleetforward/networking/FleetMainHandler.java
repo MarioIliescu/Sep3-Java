@@ -3,10 +3,10 @@ package dk.via.fleetforward.networking;
 import com.google.protobuf.Any;
 import com.google.protobuf.Message;
 import com.google.protobuf.StringValue;
-import dk.via.fleetforward.gRPC.FleetServiceGrpc;
-import dk.via.fleetforward.gRPC.Fleetforward.Response;
-import dk.via.fleetforward.gRPC.Fleetforward.Request;
-import dk.via.fleetforward.gRPC.Fleetforward.StatusType;
+import dk.via.fleetforward.gRPC.FleetServiceProtoGrpc;
+import dk.via.fleetforward.gRPC.Fleetforward.ResponseProto;
+import dk.via.fleetforward.gRPC.Fleetforward.RequestProto;
+import dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto;
 
 
 import dk.via.fleetforward.networking.handlers.FleetNetworkHandler;
@@ -20,7 +20,7 @@ import org.lognet.springboot.grpc.GRpcService;
  * @implNote extends the gpc service to provide the implementation for the gRPC service
  */
 @GRpcService
-public class FleetMainHandler extends FleetServiceGrpc.FleetServiceImplBase {
+public class FleetMainHandler extends FleetServiceProtoGrpc.FleetServiceProtoImplBase {
     private final ServiceProvider serviceProvider;
 
     public FleetMainHandler(ServiceProvider serviceProvider) {
@@ -33,7 +33,7 @@ public class FleetMainHandler extends FleetServiceGrpc.FleetServiceImplBase {
      * @param responseObserver the observer to send the response to
      */
     @Override
-    public void sendRequest(Request request, StreamObserver<Response> responseObserver) {
+    public void sendRequest(RequestProto request, StreamObserver<ResponseProto> responseObserver) {
         try {
             // Route request based on HandlerType
             FleetNetworkHandler handler = switch (request.getHandler()) {
@@ -50,14 +50,14 @@ public class FleetMainHandler extends FleetServiceGrpc.FleetServiceImplBase {
                 payload = Any.pack(result);
             }
 
-            Response response = Response.newBuilder()
-                    .setStatus(StatusType.STATUS_OK)
+            ResponseProto response = ResponseProto.newBuilder()
+                    .setStatus(StatusTypeProto.STATUS_OK)
                     .setPayload(payload)
                     .build();
             sendResponseWithHandleException(responseObserver, response);
 
         } catch (Exception e) {
-            sendGrpcError(responseObserver, StatusType.STATUS_ERROR, e.getMessage());
+            sendGrpcError(responseObserver, StatusTypeProto.STATUS_ERROR, e.getMessage());
         }
     }
 
@@ -67,11 +67,11 @@ public class FleetMainHandler extends FleetServiceGrpc.FleetServiceImplBase {
      * @param status the status of the error
      * @param errorMessage the error message to send to the client
      */
-    private void sendGrpcError(StreamObserver<Response> observer, StatusType status, String errorMessage) {
+    private void sendGrpcError(StreamObserver<ResponseProto> observer, StatusTypeProto status, String errorMessage) {
         Any payload =Any.pack(StringValue.of(errorMessage));// convert error message to protobuf message
         //don't ask me who thought this was not complicated... I want to cry... current hour 3:32AM
         //Mario
-        Response response = Response.newBuilder().
+        ResponseProto response = ResponseProto.newBuilder().
                 setStatus(status).
                 setPayload(payload)
                 .build();
@@ -84,15 +84,15 @@ public class FleetMainHandler extends FleetServiceGrpc.FleetServiceImplBase {
      * @param responseObserver the observer to send the response to
      * @param response the response to send to the client
      */
-    private void sendResponseWithHandleException(StreamObserver<Response> responseObserver, Response response)
+    private void sendResponseWithHandleException(StreamObserver<ResponseProto> responseObserver, ResponseProto response)
     {
         try {
             responseObserver.onNext(response);
         } catch (ClassCastException e) {
-            sendGrpcError(responseObserver, StatusType.STATUS_INVALID_PAYLOAD, "Invalid request");
+            sendGrpcError(responseObserver, StatusTypeProto.STATUS_INVALID_PAYLOAD, "Invalid request");
             return; // 🚫 don't call onCompleted again
         } catch (Exception e) {
-            sendGrpcError(responseObserver, StatusType.STATUS_ERROR, e.getMessage());
+            sendGrpcError(responseObserver, StatusTypeProto.STATUS_ERROR, e.getMessage());
             return;
         }
 

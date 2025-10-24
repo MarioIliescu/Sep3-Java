@@ -1,7 +1,7 @@
 package dk.via.fleetforward.services.company;
 
-import dk.via.fleetforward.gRPC.Fleetforward;
 import dk.via.fleetforward.gRPC.Fleetforward.CompanyProto;
+import dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList;
 import org.springframework.stereotype.Service;
 
 /**
@@ -55,6 +55,6 @@ public interface CompanyService {
      * Get all companies
      * @return An iterable of companies
      */
-    Fleetforward.CompanyProtoList getAll();
+    CompanyProtoList getAll();
 }
 

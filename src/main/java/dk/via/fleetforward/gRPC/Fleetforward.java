@@ -15,9 +15,9 @@ public final class Fleetforward {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * Protobuf enum {@code dk.via.fleetforward.gRPC.HandlerType}
+   * Protobuf enum {@code dk.via.fleetforward.gRPC.HandlerTypeProto}
    */
-  public enum HandlerType
+  public enum HandlerTypeProto
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>HANDLER_UNKNOWN = 0;</code>
@@ -54,7 +54,7 @@ public final class Fleetforward {
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static HandlerType valueOf(int value) {
+    public static HandlerTypeProto valueOf(int value) {
       return forNumber(value);
     }
 
@@ -62,7 +62,7 @@ public final class Fleetforward {
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static HandlerType forNumber(int value) {
+    public static HandlerTypeProto forNumber(int value) {
       switch (value) {
         case 0: return HANDLER_UNKNOWN;
         case 1: return HANDLER_COMPANY;
@@ -70,15 +70,15 @@ public final class Fleetforward {
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<HandlerType>
+    public static com.google.protobuf.Internal.EnumLiteMap<HandlerTypeProto>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        HandlerType> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<HandlerType>() {
-            public HandlerType findValueByNumber(int number) {
-              return HandlerType.forNumber(number);
+        HandlerTypeProto> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<HandlerTypeProto>() {
+            public HandlerTypeProto findValueByNumber(int number) {
+              return HandlerTypeProto.forNumber(number);
             }
           };
 
@@ -99,9 +99,9 @@ public final class Fleetforward {
       return dk.via.fleetforward.gRPC.Fleetforward.getDescriptor().getEnumTypes().get(0);
     }
 
-    private static final HandlerType[] VALUES = values();
+    private static final HandlerTypeProto[] VALUES = values();
 
-    public static HandlerType valueOf(
+    public static HandlerTypeProto valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -115,17 +115,17 @@ public final class Fleetforward {
 
     private final int value;
 
-    private HandlerType(int value) {
+    private HandlerTypeProto(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:dk.via.fleetforward.gRPC.HandlerType)
+    // @@protoc_insertion_point(enum_scope:dk.via.fleetforward.gRPC.HandlerTypeProto)
   }
 
   /**
-   * Protobuf enum {@code dk.via.fleetforward.gRPC.ActionType}
+   * Protobuf enum {@code dk.via.fleetforward.gRPC.ActionTypeProto}
    */
-  public enum ActionType
+  public enum ActionTypeProto
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>ACTION_UNKNOWN = 0;</code>
@@ -194,7 +194,7 @@ public final class Fleetforward {
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static ActionType valueOf(int value) {
+    public static ActionTypeProto valueOf(int value) {
       return forNumber(value);
     }
 
@@ -202,7 +202,7 @@ public final class Fleetforward {
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static ActionType forNumber(int value) {
+    public static ActionTypeProto forNumber(int value) {
       switch (value) {
         case 0: return ACTION_UNKNOWN;
         case 1: return ACTION_CREATE;
@@ -214,15 +214,15 @@ public final class Fleetforward {
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<ActionType>
+    public static com.google.protobuf.Internal.EnumLiteMap<ActionTypeProto>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        ActionType> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<ActionType>() {
-            public ActionType findValueByNumber(int number) {
-              return ActionType.forNumber(number);
+        ActionTypeProto> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<ActionTypeProto>() {
+            public ActionTypeProto findValueByNumber(int number) {
+              return ActionTypeProto.forNumber(number);
             }
           };
 
@@ -243,9 +243,9 @@ public final class Fleetforward {
       return dk.via.fleetforward.gRPC.Fleetforward.getDescriptor().getEnumTypes().get(1);
     }
 
-    private static final ActionType[] VALUES = values();
+    private static final ActionTypeProto[] VALUES = values();
 
-    public static ActionType valueOf(
+    public static ActionTypeProto valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -259,17 +259,17 @@ public final class Fleetforward {
 
     private final int value;
 
-    private ActionType(int value) {
+    private ActionTypeProto(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:dk.via.fleetforward.gRPC.ActionType)
+    // @@protoc_insertion_point(enum_scope:dk.via.fleetforward.gRPC.ActionTypeProto)
   }
 
   /**
-   * Protobuf enum {@code dk.via.fleetforward.gRPC.StatusType}
+   * Protobuf enum {@code dk.via.fleetforward.gRPC.StatusTypeProto}
    */
-  public enum StatusType
+  public enum StatusTypeProto
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
      * <code>STATUS_UNKNOWN = 0;</code>
@@ -322,7 +322,7 @@ public final class Fleetforward {
      * @deprecated Use {@link #forNumber(int)} instead.
      */
     @java.lang.Deprecated
-    public static StatusType valueOf(int value) {
+    public static StatusTypeProto valueOf(int value) {
       return forNumber(value);
     }
 
@@ -330,7 +330,7 @@ public final class Fleetforward {
      * @param value The numeric wire value of the corresponding enum entry.
      * @return The enum associated with the given numeric wire value.
      */
-    public static StatusType forNumber(int value) {
+    public static StatusTypeProto forNumber(int value) {
       switch (value) {
         case 0: return STATUS_UNKNOWN;
         case 1: return STATUS_OK;
@@ -340,15 +340,15 @@ public final class Fleetforward {
       }
     }
 
-    public static com.google.protobuf.Internal.EnumLiteMap<StatusType>
+    public static com.google.protobuf.Internal.EnumLiteMap<StatusTypeProto>
         internalGetValueMap() {
       return internalValueMap;
     }
     private static final com.google.protobuf.Internal.EnumLiteMap<
-        StatusType> internalValueMap =
-          new com.google.protobuf.Internal.EnumLiteMap<StatusType>() {
-            public StatusType findValueByNumber(int number) {
-              return StatusType.forNumber(number);
+        StatusTypeProto> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<StatusTypeProto>() {
+            public StatusTypeProto findValueByNumber(int number) {
+              return StatusTypeProto.forNumber(number);
             }
           };
 
@@ -369,9 +369,9 @@ public final class Fleetforward {
       return dk.via.fleetforward.gRPC.Fleetforward.getDescriptor().getEnumTypes().get(2);
     }
 
-    private static final StatusType[] VALUES = values();
+    private static final StatusTypeProto[] VALUES = values();
 
-    public static StatusType valueOf(
+    public static StatusTypeProto valueOf(
         com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
       if (desc.getType() != getDescriptor()) {
         throw new java.lang.IllegalArgumentException(
@@ -385,11 +385,11 @@ public final class Fleetforward {
 
     private final int value;
 
-    private StatusType(int value) {
+    private StatusTypeProto(int value) {
       this.value = value;
     }
 
-    // @@protoc_insertion_point(enum_scope:dk.via.fleetforward.gRPC.StatusType)
+    // @@protoc_insertion_point(enum_scope:dk.via.fleetforward.gRPC.StatusTypeProto)
   }
 
   public interface CompanyProtoListOrBuilder extends
@@ -1977,31 +1977,31 @@ public final class Fleetforward {
 
   }
 
-  public interface RequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:dk.via.fleetforward.gRPC.Request)
+  public interface RequestProtoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:dk.via.fleetforward.gRPC.RequestProto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.dk.via.fleetforward.gRPC.HandlerType handler = 1;</code>
+     * <code>.dk.via.fleetforward.gRPC.HandlerTypeProto handler = 1;</code>
      * @return The enum numeric value on the wire for handler.
      */
     int getHandlerValue();
     /**
-     * <code>.dk.via.fleetforward.gRPC.HandlerType handler = 1;</code>
+     * <code>.dk.via.fleetforward.gRPC.HandlerTypeProto handler = 1;</code>
      * @return The handler.
      */
-    dk.via.fleetforward.gRPC.Fleetforward.HandlerType getHandler();
+    dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto getHandler();
 
     /**
-     * <code>.dk.via.fleetforward.gRPC.ActionType action = 2;</code>
+     * <code>.dk.via.fleetforward.gRPC.ActionTypeProto action = 2;</code>
      * @return The enum numeric value on the wire for action.
      */
     int getActionValue();
     /**
-     * <code>.dk.via.fleetforward.gRPC.ActionType action = 2;</code>
+     * <code>.dk.via.fleetforward.gRPC.ActionTypeProto action = 2;</code>
      * @return The action.
      */
-    dk.via.fleetforward.gRPC.Fleetforward.ActionType getAction();
+    dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto getAction();
 
     /**
      * <code>.google.protobuf.Any payload = 3;</code>
@@ -2019,18 +2019,18 @@ public final class Fleetforward {
     com.google.protobuf.AnyOrBuilder getPayloadOrBuilder();
   }
   /**
-   * Protobuf type {@code dk.via.fleetforward.gRPC.Request}
+   * Protobuf type {@code dk.via.fleetforward.gRPC.RequestProto}
    */
-  public static final class Request extends
+  public static final class RequestProto extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:dk.via.fleetforward.gRPC.Request)
-      RequestOrBuilder {
+      // @@protoc_insertion_point(message_implements:dk.via.fleetforward.gRPC.RequestProto)
+      RequestProtoOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Request.newBuilder() to construct.
-    private Request(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use RequestProto.newBuilder() to construct.
+    private RequestProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Request() {
+    private RequestProto() {
       handler_ = 0;
       action_ = 0;
     }
@@ -2039,7 +2039,7 @@ public final class Fleetforward {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new Request();
+      return new RequestProto();
     }
 
     @java.lang.Override
@@ -2047,7 +2047,7 @@ public final class Fleetforward {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Request(
+    private RequestProto(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2113,53 +2113,53 @@ public final class Fleetforward {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_Request_descriptor;
+      return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_RequestProto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_Request_fieldAccessorTable
+      return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_RequestProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              dk.via.fleetforward.gRPC.Fleetforward.Request.class, dk.via.fleetforward.gRPC.Fleetforward.Request.Builder.class);
+              dk.via.fleetforward.gRPC.Fleetforward.RequestProto.class, dk.via.fleetforward.gRPC.Fleetforward.RequestProto.Builder.class);
     }
 
     public static final int HANDLER_FIELD_NUMBER = 1;
     private int handler_;
     /**
-     * <code>.dk.via.fleetforward.gRPC.HandlerType handler = 1;</code>
+     * <code>.dk.via.fleetforward.gRPC.HandlerTypeProto handler = 1;</code>
      * @return The enum numeric value on the wire for handler.
      */
     @java.lang.Override public int getHandlerValue() {
       return handler_;
     }
     /**
-     * <code>.dk.via.fleetforward.gRPC.HandlerType handler = 1;</code>
+     * <code>.dk.via.fleetforward.gRPC.HandlerTypeProto handler = 1;</code>
      * @return The handler.
      */
-    @java.lang.Override public dk.via.fleetforward.gRPC.Fleetforward.HandlerType getHandler() {
+    @java.lang.Override public dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto getHandler() {
       @SuppressWarnings("deprecation")
-      dk.via.fleetforward.gRPC.Fleetforward.HandlerType result = dk.via.fleetforward.gRPC.Fleetforward.HandlerType.valueOf(handler_);
-      return result == null ? dk.via.fleetforward.gRPC.Fleetforward.HandlerType.UNRECOGNIZED : result;
+      dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto result = dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto.valueOf(handler_);
+      return result == null ? dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto.UNRECOGNIZED : result;
     }
 
     public static final int ACTION_FIELD_NUMBER = 2;
     private int action_;
     /**
-     * <code>.dk.via.fleetforward.gRPC.ActionType action = 2;</code>
+     * <code>.dk.via.fleetforward.gRPC.ActionTypeProto action = 2;</code>
      * @return The enum numeric value on the wire for action.
      */
     @java.lang.Override public int getActionValue() {
       return action_;
     }
     /**
-     * <code>.dk.via.fleetforward.gRPC.ActionType action = 2;</code>
+     * <code>.dk.via.fleetforward.gRPC.ActionTypeProto action = 2;</code>
      * @return The action.
      */
-    @java.lang.Override public dk.via.fleetforward.gRPC.Fleetforward.ActionType getAction() {
+    @java.lang.Override public dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto getAction() {
       @SuppressWarnings("deprecation")
-      dk.via.fleetforward.gRPC.Fleetforward.ActionType result = dk.via.fleetforward.gRPC.Fleetforward.ActionType.valueOf(action_);
-      return result == null ? dk.via.fleetforward.gRPC.Fleetforward.ActionType.UNRECOGNIZED : result;
+      dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto result = dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto.valueOf(action_);
+      return result == null ? dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto.UNRECOGNIZED : result;
     }
 
     public static final int PAYLOAD_FIELD_NUMBER = 3;
@@ -2202,10 +2202,10 @@ public final class Fleetforward {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (handler_ != dk.via.fleetforward.gRPC.Fleetforward.HandlerType.HANDLER_UNKNOWN.getNumber()) {
+      if (handler_ != dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto.HANDLER_UNKNOWN.getNumber()) {
         output.writeEnum(1, handler_);
       }
-      if (action_ != dk.via.fleetforward.gRPC.Fleetforward.ActionType.ACTION_UNKNOWN.getNumber()) {
+      if (action_ != dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto.ACTION_UNKNOWN.getNumber()) {
         output.writeEnum(2, action_);
       }
       if (payload_ != null) {
@@ -2220,11 +2220,11 @@ public final class Fleetforward {
       if (size != -1) return size;
 
       size = 0;
-      if (handler_ != dk.via.fleetforward.gRPC.Fleetforward.HandlerType.HANDLER_UNKNOWN.getNumber()) {
+      if (handler_ != dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto.HANDLER_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, handler_);
       }
-      if (action_ != dk.via.fleetforward.gRPC.Fleetforward.ActionType.ACTION_UNKNOWN.getNumber()) {
+      if (action_ != dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto.ACTION_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(2, action_);
       }
@@ -2242,10 +2242,10 @@ public final class Fleetforward {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof dk.via.fleetforward.gRPC.Fleetforward.Request)) {
+      if (!(obj instanceof dk.via.fleetforward.gRPC.Fleetforward.RequestProto)) {
         return super.equals(obj);
       }
-      dk.via.fleetforward.gRPC.Fleetforward.Request other = (dk.via.fleetforward.gRPC.Fleetforward.Request) obj;
+      dk.via.fleetforward.gRPC.Fleetforward.RequestProto other = (dk.via.fleetforward.gRPC.Fleetforward.RequestProto) obj;
 
       if (handler_ != other.handler_) return false;
       if (action_ != other.action_) return false;
@@ -2278,69 +2278,69 @@ public final class Fleetforward {
       return hash;
     }
 
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseFrom(byte[] data)
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseFrom(java.io.InputStream input)
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseDelimitedFrom(java.io.InputStream input)
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseDelimitedFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2353,7 +2353,7 @@ public final class Fleetforward {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(dk.via.fleetforward.gRPC.Fleetforward.Request prototype) {
+    public static Builder newBuilder(dk.via.fleetforward.gRPC.Fleetforward.RequestProto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2369,26 +2369,26 @@ public final class Fleetforward {
       return builder;
     }
     /**
-     * Protobuf type {@code dk.via.fleetforward.gRPC.Request}
+     * Protobuf type {@code dk.via.fleetforward.gRPC.RequestProto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:dk.via.fleetforward.gRPC.Request)
-        dk.via.fleetforward.gRPC.Fleetforward.RequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:dk.via.fleetforward.gRPC.RequestProto)
+        dk.via.fleetforward.gRPC.Fleetforward.RequestProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_Request_descriptor;
+        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_RequestProto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_Request_fieldAccessorTable
+        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_RequestProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                dk.via.fleetforward.gRPC.Fleetforward.Request.class, dk.via.fleetforward.gRPC.Fleetforward.Request.Builder.class);
+                dk.via.fleetforward.gRPC.Fleetforward.RequestProto.class, dk.via.fleetforward.gRPC.Fleetforward.RequestProto.Builder.class);
       }
 
-      // Construct using dk.via.fleetforward.gRPC.Fleetforward.Request.newBuilder()
+      // Construct using dk.via.fleetforward.gRPC.Fleetforward.RequestProto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2422,17 +2422,17 @@ public final class Fleetforward {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_Request_descriptor;
+        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_RequestProto_descriptor;
       }
 
       @java.lang.Override
-      public dk.via.fleetforward.gRPC.Fleetforward.Request getDefaultInstanceForType() {
-        return dk.via.fleetforward.gRPC.Fleetforward.Request.getDefaultInstance();
+      public dk.via.fleetforward.gRPC.Fleetforward.RequestProto getDefaultInstanceForType() {
+        return dk.via.fleetforward.gRPC.Fleetforward.RequestProto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public dk.via.fleetforward.gRPC.Fleetforward.Request build() {
-        dk.via.fleetforward.gRPC.Fleetforward.Request result = buildPartial();
+      public dk.via.fleetforward.gRPC.Fleetforward.RequestProto build() {
+        dk.via.fleetforward.gRPC.Fleetforward.RequestProto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2440,8 +2440,8 @@ public final class Fleetforward {
       }
 
       @java.lang.Override
-      public dk.via.fleetforward.gRPC.Fleetforward.Request buildPartial() {
-        dk.via.fleetforward.gRPC.Fleetforward.Request result = new dk.via.fleetforward.gRPC.Fleetforward.Request(this);
+      public dk.via.fleetforward.gRPC.Fleetforward.RequestProto buildPartial() {
+        dk.via.fleetforward.gRPC.Fleetforward.RequestProto result = new dk.via.fleetforward.gRPC.Fleetforward.RequestProto(this);
         result.handler_ = handler_;
         result.action_ = action_;
         if (payloadBuilder_ == null) {
@@ -2487,16 +2487,16 @@ public final class Fleetforward {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof dk.via.fleetforward.gRPC.Fleetforward.Request) {
-          return mergeFrom((dk.via.fleetforward.gRPC.Fleetforward.Request)other);
+        if (other instanceof dk.via.fleetforward.gRPC.Fleetforward.RequestProto) {
+          return mergeFrom((dk.via.fleetforward.gRPC.Fleetforward.RequestProto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(dk.via.fleetforward.gRPC.Fleetforward.Request other) {
-        if (other == dk.via.fleetforward.gRPC.Fleetforward.Request.getDefaultInstance()) return this;
+      public Builder mergeFrom(dk.via.fleetforward.gRPC.Fleetforward.RequestProto other) {
+        if (other == dk.via.fleetforward.gRPC.Fleetforward.RequestProto.getDefaultInstance()) return this;
         if (other.handler_ != 0) {
           setHandlerValue(other.getHandlerValue());
         }
@@ -2521,11 +2521,11 @@ public final class Fleetforward {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        dk.via.fleetforward.gRPC.Fleetforward.Request parsedMessage = null;
+        dk.via.fleetforward.gRPC.Fleetforward.RequestProto parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (dk.via.fleetforward.gRPC.Fleetforward.Request) e.getUnfinishedMessage();
+          parsedMessage = (dk.via.fleetforward.gRPC.Fleetforward.RequestProto) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2537,14 +2537,14 @@ public final class Fleetforward {
 
       private int handler_ = 0;
       /**
-       * <code>.dk.via.fleetforward.gRPC.HandlerType handler = 1;</code>
+       * <code>.dk.via.fleetforward.gRPC.HandlerTypeProto handler = 1;</code>
        * @return The enum numeric value on the wire for handler.
        */
       @java.lang.Override public int getHandlerValue() {
         return handler_;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.HandlerType handler = 1;</code>
+       * <code>.dk.via.fleetforward.gRPC.HandlerTypeProto handler = 1;</code>
        * @param value The enum numeric value on the wire for handler to set.
        * @return This builder for chaining.
        */
@@ -2555,21 +2555,21 @@ public final class Fleetforward {
         return this;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.HandlerType handler = 1;</code>
+       * <code>.dk.via.fleetforward.gRPC.HandlerTypeProto handler = 1;</code>
        * @return The handler.
        */
       @java.lang.Override
-      public dk.via.fleetforward.gRPC.Fleetforward.HandlerType getHandler() {
+      public dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto getHandler() {
         @SuppressWarnings("deprecation")
-        dk.via.fleetforward.gRPC.Fleetforward.HandlerType result = dk.via.fleetforward.gRPC.Fleetforward.HandlerType.valueOf(handler_);
-        return result == null ? dk.via.fleetforward.gRPC.Fleetforward.HandlerType.UNRECOGNIZED : result;
+        dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto result = dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto.valueOf(handler_);
+        return result == null ? dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto.UNRECOGNIZED : result;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.HandlerType handler = 1;</code>
+       * <code>.dk.via.fleetforward.gRPC.HandlerTypeProto handler = 1;</code>
        * @param value The handler to set.
        * @return This builder for chaining.
        */
-      public Builder setHandler(dk.via.fleetforward.gRPC.Fleetforward.HandlerType value) {
+      public Builder setHandler(dk.via.fleetforward.gRPC.Fleetforward.HandlerTypeProto value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2579,7 +2579,7 @@ public final class Fleetforward {
         return this;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.HandlerType handler = 1;</code>
+       * <code>.dk.via.fleetforward.gRPC.HandlerTypeProto handler = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearHandler() {
@@ -2591,14 +2591,14 @@ public final class Fleetforward {
 
       private int action_ = 0;
       /**
-       * <code>.dk.via.fleetforward.gRPC.ActionType action = 2;</code>
+       * <code>.dk.via.fleetforward.gRPC.ActionTypeProto action = 2;</code>
        * @return The enum numeric value on the wire for action.
        */
       @java.lang.Override public int getActionValue() {
         return action_;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.ActionType action = 2;</code>
+       * <code>.dk.via.fleetforward.gRPC.ActionTypeProto action = 2;</code>
        * @param value The enum numeric value on the wire for action to set.
        * @return This builder for chaining.
        */
@@ -2609,21 +2609,21 @@ public final class Fleetforward {
         return this;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.ActionType action = 2;</code>
+       * <code>.dk.via.fleetforward.gRPC.ActionTypeProto action = 2;</code>
        * @return The action.
        */
       @java.lang.Override
-      public dk.via.fleetforward.gRPC.Fleetforward.ActionType getAction() {
+      public dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto getAction() {
         @SuppressWarnings("deprecation")
-        dk.via.fleetforward.gRPC.Fleetforward.ActionType result = dk.via.fleetforward.gRPC.Fleetforward.ActionType.valueOf(action_);
-        return result == null ? dk.via.fleetforward.gRPC.Fleetforward.ActionType.UNRECOGNIZED : result;
+        dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto result = dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto.valueOf(action_);
+        return result == null ? dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto.UNRECOGNIZED : result;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.ActionType action = 2;</code>
+       * <code>.dk.via.fleetforward.gRPC.ActionTypeProto action = 2;</code>
        * @param value The action to set.
        * @return This builder for chaining.
        */
-      public Builder setAction(dk.via.fleetforward.gRPC.Fleetforward.ActionType value) {
+      public Builder setAction(dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2633,7 +2633,7 @@ public final class Fleetforward {
         return this;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.ActionType action = 2;</code>
+       * <code>.dk.via.fleetforward.gRPC.ActionTypeProto action = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearAction() {
@@ -2774,60 +2774,60 @@ public final class Fleetforward {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:dk.via.fleetforward.gRPC.Request)
+      // @@protoc_insertion_point(builder_scope:dk.via.fleetforward.gRPC.RequestProto)
     }
 
-    // @@protoc_insertion_point(class_scope:dk.via.fleetforward.gRPC.Request)
-    private static final dk.via.fleetforward.gRPC.Fleetforward.Request DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:dk.via.fleetforward.gRPC.RequestProto)
+    private static final dk.via.fleetforward.gRPC.Fleetforward.RequestProto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new dk.via.fleetforward.gRPC.Fleetforward.Request();
+      DEFAULT_INSTANCE = new dk.via.fleetforward.gRPC.Fleetforward.RequestProto();
     }
 
-    public static dk.via.fleetforward.gRPC.Fleetforward.Request getDefaultInstance() {
+    public static dk.via.fleetforward.gRPC.Fleetforward.RequestProto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Request>
-        PARSER = new com.google.protobuf.AbstractParser<Request>() {
+    private static final com.google.protobuf.Parser<RequestProto>
+        PARSER = new com.google.protobuf.AbstractParser<RequestProto>() {
       @java.lang.Override
-      public Request parsePartialFrom(
+      public RequestProto parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Request(input, extensionRegistry);
+        return new RequestProto(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Request> parser() {
+    public static com.google.protobuf.Parser<RequestProto> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Request> getParserForType() {
+    public com.google.protobuf.Parser<RequestProto> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public dk.via.fleetforward.gRPC.Fleetforward.Request getDefaultInstanceForType() {
+    public dk.via.fleetforward.gRPC.Fleetforward.RequestProto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface ResponseOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:dk.via.fleetforward.gRPC.Response)
+  public interface ResponseProtoOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:dk.via.fleetforward.gRPC.ResponseProto)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.dk.via.fleetforward.gRPC.StatusType status = 1;</code>
+     * <code>.dk.via.fleetforward.gRPC.StatusTypeProto status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
     int getStatusValue();
     /**
-     * <code>.dk.via.fleetforward.gRPC.StatusType status = 1;</code>
+     * <code>.dk.via.fleetforward.gRPC.StatusTypeProto status = 1;</code>
      * @return The status.
      */
-    dk.via.fleetforward.gRPC.Fleetforward.StatusType getStatus();
+    dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto getStatus();
 
     /**
      * <code>.google.protobuf.Any payload = 2;</code>
@@ -2845,18 +2845,18 @@ public final class Fleetforward {
     com.google.protobuf.AnyOrBuilder getPayloadOrBuilder();
   }
   /**
-   * Protobuf type {@code dk.via.fleetforward.gRPC.Response}
+   * Protobuf type {@code dk.via.fleetforward.gRPC.ResponseProto}
    */
-  public static final class Response extends
+  public static final class ResponseProto extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:dk.via.fleetforward.gRPC.Response)
-      ResponseOrBuilder {
+      // @@protoc_insertion_point(message_implements:dk.via.fleetforward.gRPC.ResponseProto)
+      ResponseProtoOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Response.newBuilder() to construct.
-    private Response(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use ResponseProto.newBuilder() to construct.
+    private ResponseProto(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Response() {
+    private ResponseProto() {
       status_ = 0;
     }
 
@@ -2864,7 +2864,7 @@ public final class Fleetforward {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new Response();
+      return new ResponseProto();
     }
 
     @java.lang.Override
@@ -2872,7 +2872,7 @@ public final class Fleetforward {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Response(
+    private ResponseProto(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -2932,34 +2932,34 @@ public final class Fleetforward {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_Response_descriptor;
+      return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_ResponseProto_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_Response_fieldAccessorTable
+      return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_ResponseProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              dk.via.fleetforward.gRPC.Fleetforward.Response.class, dk.via.fleetforward.gRPC.Fleetforward.Response.Builder.class);
+              dk.via.fleetforward.gRPC.Fleetforward.ResponseProto.class, dk.via.fleetforward.gRPC.Fleetforward.ResponseProto.Builder.class);
     }
 
     public static final int STATUS_FIELD_NUMBER = 1;
     private int status_;
     /**
-     * <code>.dk.via.fleetforward.gRPC.StatusType status = 1;</code>
+     * <code>.dk.via.fleetforward.gRPC.StatusTypeProto status = 1;</code>
      * @return The enum numeric value on the wire for status.
      */
     @java.lang.Override public int getStatusValue() {
       return status_;
     }
     /**
-     * <code>.dk.via.fleetforward.gRPC.StatusType status = 1;</code>
+     * <code>.dk.via.fleetforward.gRPC.StatusTypeProto status = 1;</code>
      * @return The status.
      */
-    @java.lang.Override public dk.via.fleetforward.gRPC.Fleetforward.StatusType getStatus() {
+    @java.lang.Override public dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto getStatus() {
       @SuppressWarnings("deprecation")
-      dk.via.fleetforward.gRPC.Fleetforward.StatusType result = dk.via.fleetforward.gRPC.Fleetforward.StatusType.valueOf(status_);
-      return result == null ? dk.via.fleetforward.gRPC.Fleetforward.StatusType.UNRECOGNIZED : result;
+      dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto result = dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto.valueOf(status_);
+      return result == null ? dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto.UNRECOGNIZED : result;
     }
 
     public static final int PAYLOAD_FIELD_NUMBER = 2;
@@ -3002,7 +3002,7 @@ public final class Fleetforward {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (status_ != dk.via.fleetforward.gRPC.Fleetforward.StatusType.STATUS_UNKNOWN.getNumber()) {
+      if (status_ != dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto.STATUS_UNKNOWN.getNumber()) {
         output.writeEnum(1, status_);
       }
       if (payload_ != null) {
@@ -3017,7 +3017,7 @@ public final class Fleetforward {
       if (size != -1) return size;
 
       size = 0;
-      if (status_ != dk.via.fleetforward.gRPC.Fleetforward.StatusType.STATUS_UNKNOWN.getNumber()) {
+      if (status_ != dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto.STATUS_UNKNOWN.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, status_);
       }
@@ -3035,10 +3035,10 @@ public final class Fleetforward {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof dk.via.fleetforward.gRPC.Fleetforward.Response)) {
+      if (!(obj instanceof dk.via.fleetforward.gRPC.Fleetforward.ResponseProto)) {
         return super.equals(obj);
       }
-      dk.via.fleetforward.gRPC.Fleetforward.Response other = (dk.via.fleetforward.gRPC.Fleetforward.Response) obj;
+      dk.via.fleetforward.gRPC.Fleetforward.ResponseProto other = (dk.via.fleetforward.gRPC.Fleetforward.ResponseProto) obj;
 
       if (status_ != other.status_) return false;
       if (hasPayload() != other.hasPayload()) return false;
@@ -3068,69 +3068,69 @@ public final class Fleetforward {
       return hash;
     }
 
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseFrom(byte[] data)
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseFrom(java.io.InputStream input)
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseDelimitedFrom(java.io.InputStream input)
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseDelimitedFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response parseFrom(
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3143,7 +3143,7 @@ public final class Fleetforward {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(dk.via.fleetforward.gRPC.Fleetforward.Response prototype) {
+    public static Builder newBuilder(dk.via.fleetforward.gRPC.Fleetforward.ResponseProto prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3159,26 +3159,26 @@ public final class Fleetforward {
       return builder;
     }
     /**
-     * Protobuf type {@code dk.via.fleetforward.gRPC.Response}
+     * Protobuf type {@code dk.via.fleetforward.gRPC.ResponseProto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:dk.via.fleetforward.gRPC.Response)
-        dk.via.fleetforward.gRPC.Fleetforward.ResponseOrBuilder {
+        // @@protoc_insertion_point(builder_implements:dk.via.fleetforward.gRPC.ResponseProto)
+        dk.via.fleetforward.gRPC.Fleetforward.ResponseProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_Response_descriptor;
+        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_ResponseProto_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_Response_fieldAccessorTable
+        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_ResponseProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                dk.via.fleetforward.gRPC.Fleetforward.Response.class, dk.via.fleetforward.gRPC.Fleetforward.Response.Builder.class);
+                dk.via.fleetforward.gRPC.Fleetforward.ResponseProto.class, dk.via.fleetforward.gRPC.Fleetforward.ResponseProto.Builder.class);
       }
 
-      // Construct using dk.via.fleetforward.gRPC.Fleetforward.Response.newBuilder()
+      // Construct using dk.via.fleetforward.gRPC.Fleetforward.ResponseProto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3210,17 +3210,17 @@ public final class Fleetforward {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_Response_descriptor;
+        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_ResponseProto_descriptor;
       }
 
       @java.lang.Override
-      public dk.via.fleetforward.gRPC.Fleetforward.Response getDefaultInstanceForType() {
-        return dk.via.fleetforward.gRPC.Fleetforward.Response.getDefaultInstance();
+      public dk.via.fleetforward.gRPC.Fleetforward.ResponseProto getDefaultInstanceForType() {
+        return dk.via.fleetforward.gRPC.Fleetforward.ResponseProto.getDefaultInstance();
       }
 
       @java.lang.Override
-      public dk.via.fleetforward.gRPC.Fleetforward.Response build() {
-        dk.via.fleetforward.gRPC.Fleetforward.Response result = buildPartial();
+      public dk.via.fleetforward.gRPC.Fleetforward.ResponseProto build() {
+        dk.via.fleetforward.gRPC.Fleetforward.ResponseProto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3228,8 +3228,8 @@ public final class Fleetforward {
       }
 
       @java.lang.Override
-      public dk.via.fleetforward.gRPC.Fleetforward.Response buildPartial() {
-        dk.via.fleetforward.gRPC.Fleetforward.Response result = new dk.via.fleetforward.gRPC.Fleetforward.Response(this);
+      public dk.via.fleetforward.gRPC.Fleetforward.ResponseProto buildPartial() {
+        dk.via.fleetforward.gRPC.Fleetforward.ResponseProto result = new dk.via.fleetforward.gRPC.Fleetforward.ResponseProto(this);
         result.status_ = status_;
         if (payloadBuilder_ == null) {
           result.payload_ = payload_;
@@ -3274,16 +3274,16 @@ public final class Fleetforward {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof dk.via.fleetforward.gRPC.Fleetforward.Response) {
-          return mergeFrom((dk.via.fleetforward.gRPC.Fleetforward.Response)other);
+        if (other instanceof dk.via.fleetforward.gRPC.Fleetforward.ResponseProto) {
+          return mergeFrom((dk.via.fleetforward.gRPC.Fleetforward.ResponseProto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(dk.via.fleetforward.gRPC.Fleetforward.Response other) {
-        if (other == dk.via.fleetforward.gRPC.Fleetforward.Response.getDefaultInstance()) return this;
+      public Builder mergeFrom(dk.via.fleetforward.gRPC.Fleetforward.ResponseProto other) {
+        if (other == dk.via.fleetforward.gRPC.Fleetforward.ResponseProto.getDefaultInstance()) return this;
         if (other.status_ != 0) {
           setStatusValue(other.getStatusValue());
         }
@@ -3305,11 +3305,11 @@ public final class Fleetforward {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        dk.via.fleetforward.gRPC.Fleetforward.Response parsedMessage = null;
+        dk.via.fleetforward.gRPC.Fleetforward.ResponseProto parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (dk.via.fleetforward.gRPC.Fleetforward.Response) e.getUnfinishedMessage();
+          parsedMessage = (dk.via.fleetforward.gRPC.Fleetforward.ResponseProto) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3321,14 +3321,14 @@ public final class Fleetforward {
 
       private int status_ = 0;
       /**
-       * <code>.dk.via.fleetforward.gRPC.StatusType status = 1;</code>
+       * <code>.dk.via.fleetforward.gRPC.StatusTypeProto status = 1;</code>
        * @return The enum numeric value on the wire for status.
        */
       @java.lang.Override public int getStatusValue() {
         return status_;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.StatusType status = 1;</code>
+       * <code>.dk.via.fleetforward.gRPC.StatusTypeProto status = 1;</code>
        * @param value The enum numeric value on the wire for status to set.
        * @return This builder for chaining.
        */
@@ -3339,21 +3339,21 @@ public final class Fleetforward {
         return this;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.StatusType status = 1;</code>
+       * <code>.dk.via.fleetforward.gRPC.StatusTypeProto status = 1;</code>
        * @return The status.
        */
       @java.lang.Override
-      public dk.via.fleetforward.gRPC.Fleetforward.StatusType getStatus() {
+      public dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto getStatus() {
         @SuppressWarnings("deprecation")
-        dk.via.fleetforward.gRPC.Fleetforward.StatusType result = dk.via.fleetforward.gRPC.Fleetforward.StatusType.valueOf(status_);
-        return result == null ? dk.via.fleetforward.gRPC.Fleetforward.StatusType.UNRECOGNIZED : result;
+        dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto result = dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto.valueOf(status_);
+        return result == null ? dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto.UNRECOGNIZED : result;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.StatusType status = 1;</code>
+       * <code>.dk.via.fleetforward.gRPC.StatusTypeProto status = 1;</code>
        * @param value The status to set.
        * @return This builder for chaining.
        */
-      public Builder setStatus(dk.via.fleetforward.gRPC.Fleetforward.StatusType value) {
+      public Builder setStatus(dk.via.fleetforward.gRPC.Fleetforward.StatusTypeProto value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -3363,7 +3363,7 @@ public final class Fleetforward {
         return this;
       }
       /**
-       * <code>.dk.via.fleetforward.gRPC.StatusType status = 1;</code>
+       * <code>.dk.via.fleetforward.gRPC.StatusTypeProto status = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStatus() {
@@ -3504,41 +3504,41 @@ public final class Fleetforward {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:dk.via.fleetforward.gRPC.Response)
+      // @@protoc_insertion_point(builder_scope:dk.via.fleetforward.gRPC.ResponseProto)
     }
 
-    // @@protoc_insertion_point(class_scope:dk.via.fleetforward.gRPC.Response)
-    private static final dk.via.fleetforward.gRPC.Fleetforward.Response DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:dk.via.fleetforward.gRPC.ResponseProto)
+    private static final dk.via.fleetforward.gRPC.Fleetforward.ResponseProto DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new dk.via.fleetforward.gRPC.Fleetforward.Response();
+      DEFAULT_INSTANCE = new dk.via.fleetforward.gRPC.Fleetforward.ResponseProto();
     }
 
-    public static dk.via.fleetforward.gRPC.Fleetforward.Response getDefaultInstance() {
+    public static dk.via.fleetforward.gRPC.Fleetforward.ResponseProto getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Response>
-        PARSER = new com.google.protobuf.AbstractParser<Response>() {
+    private static final com.google.protobuf.Parser<ResponseProto>
+        PARSER = new com.google.protobuf.AbstractParser<ResponseProto>() {
       @java.lang.Override
-      public Response parsePartialFrom(
+      public ResponseProto parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Response(input, extensionRegistry);
+        return new ResponseProto(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Response> parser() {
+    public static com.google.protobuf.Parser<ResponseProto> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Response> getParserForType() {
+    public com.google.protobuf.Parser<ResponseProto> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public dk.via.fleetforward.gRPC.Fleetforward.Response getDefaultInstanceForType() {
+    public dk.via.fleetforward.gRPC.Fleetforward.ResponseProto getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3555,15 +3555,15 @@ public final class Fleetforward {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_dk_via_fleetforward_gRPC_CompanyProto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_dk_via_fleetforward_gRPC_Request_descriptor;
+    internal_static_dk_via_fleetforward_gRPC_RequestProto_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_dk_via_fleetforward_gRPC_Request_fieldAccessorTable;
+      internal_static_dk_via_fleetforward_gRPC_RequestProto_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_dk_via_fleetforward_gRPC_Response_descriptor;
+    internal_static_dk_via_fleetforward_gRPC_ResponseProto_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_dk_via_fleetforward_gRPC_Response_fieldAccessorTable;
+      internal_static_dk_via_fleetforward_gRPC_ResponseProto_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3578,23 +3578,25 @@ public final class Fleetforward {
       "panyProtoList\0229\n\tcompanies\030\001 \003(\0132&.dk.vi" +
       "a.fleetforward.gRPC.CompanyProto\"C\n\014Comp" +
       "anyProto\022\n\n\002id\030\001 \001(\005\022\021\n\tmc_number\030\002 \001(\t\022" +
-      "\024\n\014company_name\030\003 \001(\t\"\236\001\n\007Request\0226\n\007han" +
-      "dler\030\001 \001(\0162%.dk.via.fleetforward.gRPC.Ha" +
-      "ndlerType\0224\n\006action\030\002 \001(\0162$.dk.via.fleet" +
-      "forward.gRPC.ActionType\022%\n\007payload\030\003 \001(\013" +
-      "2\024.google.protobuf.Any\"g\n\010Response\0224\n\006st" +
-      "atus\030\001 \001(\0162$.dk.via.fleetforward.gRPC.St" +
-      "atusType\022%\n\007payload\030\002 \001(\0132\024.google.proto" +
-      "buf.Any*7\n\013HandlerType\022\023\n\017HANDLER_UNKNOW" +
-      "N\020\000\022\023\n\017HANDLER_COMPANY\020\001*z\n\nActionType\022\022" +
-      "\n\016ACTION_UNKNOWN\020\000\022\021\n\rACTION_CREATE\020\001\022\016\n" +
-      "\nACTION_GET\020\002\022\021\n\rACTION_UPDATE\020\003\022\021\n\rACTI" +
-      "ON_DELETE\020\004\022\017\n\013ACTION_LIST\020\005*]\n\nStatusTy" +
-      "pe\022\022\n\016STATUS_UNKNOWN\020\000\022\r\n\tSTATUS_OK\020\001\022\020\n" +
+      "\024\n\014company_name\030\003 \001(\t\"\255\001\n\014RequestProto\022;" +
+      "\n\007handler\030\001 \001(\0162*.dk.via.fleetforward.gR" +
+      "PC.HandlerTypeProto\0229\n\006action\030\002 \001(\0162).dk" +
+      ".via.fleetforward.gRPC.ActionTypeProto\022%" +
+      "\n\007payload\030\003 \001(\0132\024.google.protobuf.Any\"q\n" +
+      "\rResponseProto\0229\n\006status\030\001 \001(\0162).dk.via." +
+      "fleetforward.gRPC.StatusTypeProto\022%\n\007pay" +
+      "load\030\002 \001(\0132\024.google.protobuf.Any*<\n\020Hand" +
+      "lerTypeProto\022\023\n\017HANDLER_UNKNOWN\020\000\022\023\n\017HAN" +
+      "DLER_COMPANY\020\001*\177\n\017ActionTypeProto\022\022\n\016ACT" +
+      "ION_UNKNOWN\020\000\022\021\n\rACTION_CREATE\020\001\022\016\n\nACTI" +
+      "ON_GET\020\002\022\021\n\rACTION_UPDATE\020\003\022\021\n\rACTION_DE" +
+      "LETE\020\004\022\017\n\013ACTION_LIST\020\005*b\n\017StatusTypePro" +
+      "to\022\022\n\016STATUS_UNKNOWN\020\000\022\r\n\tSTATUS_OK\020\001\022\020\n" +
       "\014STATUS_ERROR\020\002\022\032\n\026STATUS_INVALID_PAYLOA" +
-      "D\020\0032d\n\014FleetService\022T\n\013SendRequest\022!.dk." +
-      "via.fleetforward.gRPC.Request\032\".dk.via.f" +
-      "leetforward.gRPC.Responseb\006proto3"
+      "D\020\0032s\n\021FleetServiceProto\022^\n\013SendRequest\022" +
+      "&.dk.via.fleetforward.gRPC.RequestProto\032" +
+      "\'.dk.via.fleetforward.gRPC.ResponseProto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3613,17 +3615,17 @@ public final class Fleetforward {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_dk_via_fleetforward_gRPC_CompanyProto_descriptor,
         new java.lang.String[] { "Id", "McNumber", "CompanyName", });
-    internal_static_dk_via_fleetforward_gRPC_Request_descriptor =
+    internal_static_dk_via_fleetforward_gRPC_RequestProto_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_dk_via_fleetforward_gRPC_Request_fieldAccessorTable = new
+    internal_static_dk_via_fleetforward_gRPC_RequestProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_dk_via_fleetforward_gRPC_Request_descriptor,
+        internal_static_dk_via_fleetforward_gRPC_RequestProto_descriptor,
         new java.lang.String[] { "Handler", "Action", "Payload", });
-    internal_static_dk_via_fleetforward_gRPC_Response_descriptor =
+    internal_static_dk_via_fleetforward_gRPC_ResponseProto_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_dk_via_fleetforward_gRPC_Response_fieldAccessorTable = new
+    internal_static_dk_via_fleetforward_gRPC_ResponseProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_dk_via_fleetforward_gRPC_Response_descriptor,
+        internal_static_dk_via_fleetforward_gRPC_ResponseProto_descriptor,
         new java.lang.String[] { "Status", "Payload", });
     com.google.protobuf.AnyProto.getDescriptor();
   }

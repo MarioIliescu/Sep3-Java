@@ -3,9 +3,8 @@ package dk.via.fleetforward.networking.handlers;
 import com.google.protobuf.Any;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.Message;
-import dk.via.fleetforward.gRPC.Fleetforward;
 import dk.via.fleetforward.gRPC.Fleetforward.CompanyProto;
-import dk.via.fleetforward.gRPC.Fleetforward.ActionType;
+import dk.via.fleetforward.gRPC.Fleetforward.ActionTypeProto;
 import dk.via.fleetforward.services.company.CompanyService;
 
 /**
@@ -37,7 +36,7 @@ public class CompanyHandler implements FleetNetworkHandler {
      * @throws IllegalArgumentException if the provided action type is invalid or unsupported.
      */
     @Override
-    public Message handle(ActionType actionType, Object payload) {
+    public Message handle(ActionTypeProto actionType, Object payload) {
         Message proto = null;
         Any payloadAny = (Any) payload;
       CompanyProto request = null;
@@ -62,7 +61,7 @@ public class CompanyHandler implements FleetNetworkHandler {
             case ACTION_DELETE -> {
                 handleDelete(request);
             }
-            case ActionType.ACTION_LIST -> {
+            case ACTION_LIST -> {
                 proto = companyService.getAll();
             }
             default -> {
