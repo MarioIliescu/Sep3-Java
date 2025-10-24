@@ -392,6 +392,801 @@ public final class Fleetforward {
     // @@protoc_insertion_point(enum_scope:dk.via.fleetforward.gRPC.StatusType)
   }
 
+  public interface CompanyProtoListOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:dk.via.fleetforward.gRPC.CompanyProtoList)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+     */
+    java.util.List<dk.via.fleetforward.gRPC.Fleetforward.CompanyProto> 
+        getCompaniesList();
+    /**
+     * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+     */
+    dk.via.fleetforward.gRPC.Fleetforward.CompanyProto getCompanies(int index);
+    /**
+     * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+     */
+    int getCompaniesCount();
+    /**
+     * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+     */
+    java.util.List<? extends dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoOrBuilder> 
+        getCompaniesOrBuilderList();
+    /**
+     * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+     */
+    dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoOrBuilder getCompaniesOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code dk.via.fleetforward.gRPC.CompanyProtoList}
+   */
+  public static final class CompanyProtoList extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:dk.via.fleetforward.gRPC.CompanyProtoList)
+      CompanyProtoListOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use CompanyProtoList.newBuilder() to construct.
+    private CompanyProtoList(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private CompanyProtoList() {
+      companies_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new CompanyProtoList();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CompanyProtoList(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                companies_ = new java.util.ArrayList<dk.via.fleetforward.gRPC.Fleetforward.CompanyProto>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              companies_.add(
+                  input.readMessage(dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.parser(), extensionRegistry));
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          companies_ = java.util.Collections.unmodifiableList(companies_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_CompanyProtoList_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_CompanyProtoList_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList.class, dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList.Builder.class);
+    }
+
+    public static final int COMPANIES_FIELD_NUMBER = 1;
+    private java.util.List<dk.via.fleetforward.gRPC.Fleetforward.CompanyProto> companies_;
+    /**
+     * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<dk.via.fleetforward.gRPC.Fleetforward.CompanyProto> getCompaniesList() {
+      return companies_;
+    }
+    /**
+     * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoOrBuilder> 
+        getCompaniesOrBuilderList() {
+      return companies_;
+    }
+    /**
+     * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+     */
+    @java.lang.Override
+    public int getCompaniesCount() {
+      return companies_.size();
+    }
+    /**
+     * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+     */
+    @java.lang.Override
+    public dk.via.fleetforward.gRPC.Fleetforward.CompanyProto getCompanies(int index) {
+      return companies_.get(index);
+    }
+    /**
+     * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+     */
+    @java.lang.Override
+    public dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoOrBuilder getCompaniesOrBuilder(
+        int index) {
+      return companies_.get(index);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < companies_.size(); i++) {
+        output.writeMessage(1, companies_.get(i));
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < companies_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, companies_.get(i));
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList)) {
+        return super.equals(obj);
+      }
+      dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList other = (dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList) obj;
+
+      if (!getCompaniesList()
+          .equals(other.getCompaniesList())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getCompaniesCount() > 0) {
+        hash = (37 * hash) + COMPANIES_FIELD_NUMBER;
+        hash = (53 * hash) + getCompaniesList().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code dk.via.fleetforward.gRPC.CompanyProtoList}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:dk.via.fleetforward.gRPC.CompanyProtoList)
+        dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoListOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_CompanyProtoList_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_CompanyProtoList_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList.class, dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList.Builder.class);
+      }
+
+      // Construct using dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getCompaniesFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (companiesBuilder_ == null) {
+          companies_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          companiesBuilder_.clear();
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return dk.via.fleetforward.gRPC.Fleetforward.internal_static_dk_via_fleetforward_gRPC_CompanyProtoList_descriptor;
+      }
+
+      @java.lang.Override
+      public dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList getDefaultInstanceForType() {
+        return dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList build() {
+        dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList buildPartial() {
+        dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList result = new dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList(this);
+        int from_bitField0_ = bitField0_;
+        if (companiesBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            companies_ = java.util.Collections.unmodifiableList(companies_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.companies_ = companies_;
+        } else {
+          result.companies_ = companiesBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList) {
+          return mergeFrom((dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList other) {
+        if (other == dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList.getDefaultInstance()) return this;
+        if (companiesBuilder_ == null) {
+          if (!other.companies_.isEmpty()) {
+            if (companies_.isEmpty()) {
+              companies_ = other.companies_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureCompaniesIsMutable();
+              companies_.addAll(other.companies_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.companies_.isEmpty()) {
+            if (companiesBuilder_.isEmpty()) {
+              companiesBuilder_.dispose();
+              companiesBuilder_ = null;
+              companies_ = other.companies_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              companiesBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getCompaniesFieldBuilder() : null;
+            } else {
+              companiesBuilder_.addAllMessages(other.companies_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.util.List<dk.via.fleetforward.gRPC.Fleetforward.CompanyProto> companies_ =
+        java.util.Collections.emptyList();
+      private void ensureCompaniesIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          companies_ = new java.util.ArrayList<dk.via.fleetforward.gRPC.Fleetforward.CompanyProto>(companies_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          dk.via.fleetforward.gRPC.Fleetforward.CompanyProto, dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.Builder, dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoOrBuilder> companiesBuilder_;
+
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public java.util.List<dk.via.fleetforward.gRPC.Fleetforward.CompanyProto> getCompaniesList() {
+        if (companiesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(companies_);
+        } else {
+          return companiesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public int getCompaniesCount() {
+        if (companiesBuilder_ == null) {
+          return companies_.size();
+        } else {
+          return companiesBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public dk.via.fleetforward.gRPC.Fleetforward.CompanyProto getCompanies(int index) {
+        if (companiesBuilder_ == null) {
+          return companies_.get(index);
+        } else {
+          return companiesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public Builder setCompanies(
+          int index, dk.via.fleetforward.gRPC.Fleetforward.CompanyProto value) {
+        if (companiesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCompaniesIsMutable();
+          companies_.set(index, value);
+          onChanged();
+        } else {
+          companiesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public Builder setCompanies(
+          int index, dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.Builder builderForValue) {
+        if (companiesBuilder_ == null) {
+          ensureCompaniesIsMutable();
+          companies_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          companiesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public Builder addCompanies(dk.via.fleetforward.gRPC.Fleetforward.CompanyProto value) {
+        if (companiesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCompaniesIsMutable();
+          companies_.add(value);
+          onChanged();
+        } else {
+          companiesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public Builder addCompanies(
+          int index, dk.via.fleetforward.gRPC.Fleetforward.CompanyProto value) {
+        if (companiesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureCompaniesIsMutable();
+          companies_.add(index, value);
+          onChanged();
+        } else {
+          companiesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public Builder addCompanies(
+          dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.Builder builderForValue) {
+        if (companiesBuilder_ == null) {
+          ensureCompaniesIsMutable();
+          companies_.add(builderForValue.build());
+          onChanged();
+        } else {
+          companiesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public Builder addCompanies(
+          int index, dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.Builder builderForValue) {
+        if (companiesBuilder_ == null) {
+          ensureCompaniesIsMutable();
+          companies_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          companiesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public Builder addAllCompanies(
+          java.lang.Iterable<? extends dk.via.fleetforward.gRPC.Fleetforward.CompanyProto> values) {
+        if (companiesBuilder_ == null) {
+          ensureCompaniesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, companies_);
+          onChanged();
+        } else {
+          companiesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public Builder clearCompanies() {
+        if (companiesBuilder_ == null) {
+          companies_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          companiesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public Builder removeCompanies(int index) {
+        if (companiesBuilder_ == null) {
+          ensureCompaniesIsMutable();
+          companies_.remove(index);
+          onChanged();
+        } else {
+          companiesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.Builder getCompaniesBuilder(
+          int index) {
+        return getCompaniesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoOrBuilder getCompaniesOrBuilder(
+          int index) {
+        if (companiesBuilder_ == null) {
+          return companies_.get(index);  } else {
+          return companiesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public java.util.List<? extends dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoOrBuilder> 
+           getCompaniesOrBuilderList() {
+        if (companiesBuilder_ != null) {
+          return companiesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(companies_);
+        }
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.Builder addCompaniesBuilder() {
+        return getCompaniesFieldBuilder().addBuilder(
+            dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.Builder addCompaniesBuilder(
+          int index) {
+        return getCompaniesFieldBuilder().addBuilder(
+            index, dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .dk.via.fleetforward.gRPC.CompanyProto companies = 1;</code>
+       */
+      public java.util.List<dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.Builder> 
+           getCompaniesBuilderList() {
+        return getCompaniesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          dk.via.fleetforward.gRPC.Fleetforward.CompanyProto, dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.Builder, dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoOrBuilder> 
+          getCompaniesFieldBuilder() {
+        if (companiesBuilder_ == null) {
+          companiesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              dk.via.fleetforward.gRPC.Fleetforward.CompanyProto, dk.via.fleetforward.gRPC.Fleetforward.CompanyProto.Builder, dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoOrBuilder>(
+                  companies_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          companies_ = null;
+        }
+        return companiesBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:dk.via.fleetforward.gRPC.CompanyProtoList)
+    }
+
+    // @@protoc_insertion_point(class_scope:dk.via.fleetforward.gRPC.CompanyProtoList)
+    private static final dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList();
+    }
+
+    public static dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<CompanyProtoList>
+        PARSER = new com.google.protobuf.AbstractParser<CompanyProtoList>() {
+      @java.lang.Override
+      public CompanyProtoList parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CompanyProtoList(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<CompanyProtoList> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CompanyProtoList> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public dk.via.fleetforward.gRPC.Fleetforward.CompanyProtoList getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface CompanyProtoOrBuilder extends
       // @@protoc_insertion_point(interface_extends:dk.via.fleetforward.gRPC.CompanyProto)
       com.google.protobuf.MessageOrBuilder {
@@ -2750,6 +3545,11 @@ public final class Fleetforward {
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_dk_via_fleetforward_gRPC_CompanyProtoList_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_dk_via_fleetforward_gRPC_CompanyProtoList_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_dk_via_fleetforward_gRPC_CompanyProto_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -2774,45 +3574,53 @@ public final class Fleetforward {
   static {
     java.lang.String[] descriptorData = {
       "\n\022fleetforward.proto\022\030dk.via.fleetforwar" +
-      "d.gRPC\032\031google/protobuf/any.proto\"C\n\014Com" +
-      "panyProto\022\n\n\002id\030\001 \001(\005\022\021\n\tmc_number\030\002 \001(\t" +
-      "\022\024\n\014company_name\030\003 \001(\t\"\236\001\n\007Request\0226\n\007ha" +
-      "ndler\030\001 \001(\0162%.dk.via.fleetforward.gRPC.H" +
-      "andlerType\0224\n\006action\030\002 \001(\0162$.dk.via.flee" +
-      "tforward.gRPC.ActionType\022%\n\007payload\030\003 \001(" +
-      "\0132\024.google.protobuf.Any\"g\n\010Response\0224\n\006s" +
-      "tatus\030\001 \001(\0162$.dk.via.fleetforward.gRPC.S" +
-      "tatusType\022%\n\007payload\030\002 \001(\0132\024.google.prot" +
-      "obuf.Any*7\n\013HandlerType\022\023\n\017HANDLER_UNKNO" +
-      "WN\020\000\022\023\n\017HANDLER_COMPANY\020\001*z\n\nActionType\022" +
-      "\022\n\016ACTION_UNKNOWN\020\000\022\021\n\rACTION_CREATE\020\001\022\016" +
-      "\n\nACTION_GET\020\002\022\021\n\rACTION_UPDATE\020\003\022\021\n\rACT" +
-      "ION_DELETE\020\004\022\017\n\013ACTION_LIST\020\005*]\n\nStatusT" +
-      "ype\022\022\n\016STATUS_UNKNOWN\020\000\022\r\n\tSTATUS_OK\020\001\022\020" +
-      "\n\014STATUS_ERROR\020\002\022\032\n\026STATUS_INVALID_PAYLO" +
-      "AD\020\0032d\n\014FleetService\022T\n\013sendRequest\022!.dk" +
-      ".via.fleetforward.gRPC.Request\032\".dk.via." +
-      "fleetforward.gRPC.Responseb\006proto3"
+      "d.gRPC\032\031google/protobuf/any.proto\"M\n\020Com" +
+      "panyProtoList\0229\n\tcompanies\030\001 \003(\0132&.dk.vi" +
+      "a.fleetforward.gRPC.CompanyProto\"C\n\014Comp" +
+      "anyProto\022\n\n\002id\030\001 \001(\005\022\021\n\tmc_number\030\002 \001(\t\022" +
+      "\024\n\014company_name\030\003 \001(\t\"\236\001\n\007Request\0226\n\007han" +
+      "dler\030\001 \001(\0162%.dk.via.fleetforward.gRPC.Ha" +
+      "ndlerType\0224\n\006action\030\002 \001(\0162$.dk.via.fleet" +
+      "forward.gRPC.ActionType\022%\n\007payload\030\003 \001(\013" +
+      "2\024.google.protobuf.Any\"g\n\010Response\0224\n\006st" +
+      "atus\030\001 \001(\0162$.dk.via.fleetforward.gRPC.St" +
+      "atusType\022%\n\007payload\030\002 \001(\0132\024.google.proto" +
+      "buf.Any*7\n\013HandlerType\022\023\n\017HANDLER_UNKNOW" +
+      "N\020\000\022\023\n\017HANDLER_COMPANY\020\001*z\n\nActionType\022\022" +
+      "\n\016ACTION_UNKNOWN\020\000\022\021\n\rACTION_CREATE\020\001\022\016\n" +
+      "\nACTION_GET\020\002\022\021\n\rACTION_UPDATE\020\003\022\021\n\rACTI" +
+      "ON_DELETE\020\004\022\017\n\013ACTION_LIST\020\005*]\n\nStatusTy" +
+      "pe\022\022\n\016STATUS_UNKNOWN\020\000\022\r\n\tSTATUS_OK\020\001\022\020\n" +
+      "\014STATUS_ERROR\020\002\022\032\n\026STATUS_INVALID_PAYLOA" +
+      "D\020\0032d\n\014FleetService\022T\n\013sendRequest\022!.dk." +
+      "via.fleetforward.gRPC.Request\032\".dk.via.f" +
+      "leetforward.gRPC.Responseb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.protobuf.AnyProto.getDescriptor(),
         });
-    internal_static_dk_via_fleetforward_gRPC_CompanyProto_descriptor =
+    internal_static_dk_via_fleetforward_gRPC_CompanyProtoList_descriptor =
       getDescriptor().getMessageTypes().get(0);
+    internal_static_dk_via_fleetforward_gRPC_CompanyProtoList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_dk_via_fleetforward_gRPC_CompanyProtoList_descriptor,
+        new java.lang.String[] { "Companies", });
+    internal_static_dk_via_fleetforward_gRPC_CompanyProto_descriptor =
+      getDescriptor().getMessageTypes().get(1);
     internal_static_dk_via_fleetforward_gRPC_CompanyProto_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_dk_via_fleetforward_gRPC_CompanyProto_descriptor,
         new java.lang.String[] { "Id", "McNumber", "CompanyName", });
     internal_static_dk_via_fleetforward_gRPC_Request_descriptor =
-      getDescriptor().getMessageTypes().get(1);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_dk_via_fleetforward_gRPC_Request_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_dk_via_fleetforward_gRPC_Request_descriptor,
         new java.lang.String[] { "Handler", "Action", "Payload", });
     internal_static_dk_via_fleetforward_gRPC_Response_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_dk_via_fleetforward_gRPC_Response_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_dk_via_fleetforward_gRPC_Response_descriptor,

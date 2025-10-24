@@ -17,7 +17,9 @@ enum ActionType {
   ACTION_DELETE = 4;
   ACTION_LIST = 5;
 }
-
+message CompanyProtoList {
+  repeated CompanyProto companies = 1;
+}
 enum StatusType {
   STATUS_UNKNOWN = 0;
   STATUS_OK = 1;

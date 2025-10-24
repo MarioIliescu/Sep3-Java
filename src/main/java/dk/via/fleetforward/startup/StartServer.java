@@ -10,16 +10,16 @@ import java.io.IOException;
 @EnableJpaRepositories("dk.via.fleetforward.repositories.database")
 @EntityScan("dk.via.fleetforward.model")
 @SpringBootApplication(scanBasePackages = "dk.via.fleetforward")
-public class StartServer {
 
+public class StartServer {
     public static void main(String[] args) throws IOException, InterruptedException {
-        var context = SpringApplication.run(StartServer.class, args);
+        GlobalContext.setContext(SpringApplication.run(StartServer.class, args));
 
         // Manually get FleetServer bean and start gRPC
-        FleetServer fleetServer = context.getBean(FleetServer.class);
+        FleetServer fleetServer = GlobalContext.getContext().getBean(FleetServer.class);
         fleetServer.start();
         System.out.println("Fleetforward gRPC Server started");
         System.out.println("You did it choom");
     }
-}
 
+}

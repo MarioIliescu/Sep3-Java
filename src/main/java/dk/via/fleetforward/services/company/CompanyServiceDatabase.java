@@ -1,4 +1,5 @@
 package dk.via.fleetforward.services.company;
+import dk.via.fleetforward.gRPC.Fleetforward;
 import dk.via.fleetforward.gRPC.Fleetforward.CompanyProto;
 import dk.via.fleetforward.model.Company;
 import dk.via.fleetforward.repositories.database.CompanyRepository;
@@ -15,7 +16,7 @@ import java.util.Optional;
  * This class is transactional (makes changes to the database)
  * @see CompanyService
  */
-@Service("database")
+@Service()
 public class CompanyServiceDatabase implements CompanyService{
 
     private final CompanyRepository companyRepository;
@@ -129,14 +130,22 @@ public class CompanyServiceDatabase implements CompanyService{
      * @return {@inheritDoc}
      */
     @Override
-    public Iterable<CompanyProto> getAll() {
-        List<Company> companies = companyRepository.findAll();
-        Iterable<CompanyProto> companiesProto;
-        companiesProto = companies.stream().map(company -> CompanyProto.newBuilder()
-                .setId(company.getId())
-                .setMcNumber(company.getMcNumber())
-                .setCompanyName(company.getCompanyName())
-                .build()).toList();
-        return companiesProto;
+    public Fleetforward.CompanyProtoList getAll() {
+      List<Company> companies = companyRepository.findAll();
+
+      // Builder for the list
+      Fleetforward.CompanyProtoList.Builder companiesProtoBuilder = Fleetforward.CompanyProtoList.newBuilder();
+
+      // Convert each Company entity to CompanyProto
+      for (Company company : companies) {
+        Fleetforward.CompanyProto companyProto = Fleetforward.CompanyProto.newBuilder()
+            .setId(company.getId())
+            .setMcNumber(company.getMcNumber())
+            .setCompanyName(company.getCompanyName())
+            .build();
+        companiesProtoBuilder.addCompanies(companyProto);
+      }
+      // Build and return the list
+      return companiesProtoBuilder.build();
     }
 }

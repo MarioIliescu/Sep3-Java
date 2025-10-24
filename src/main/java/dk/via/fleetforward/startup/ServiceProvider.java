@@ -16,9 +16,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ServiceProvider {
-    private ApplicationContext context;
     public CompanyServiceDatabase getCompanyService(){
-        return new CompanyServiceDatabase(context.getBean(CompanyRepository.class));
+        return GlobalContext.getBean(CompanyServiceDatabase.class);
     }
     public FleetNetworkHandler getCompanyHandler(){
         return new CompanyHandler(getCompanyService());
