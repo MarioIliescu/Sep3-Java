@@ -629,7 +629,9 @@ public interface CompanyRepository extends JpaRepository<Company, Integer>{
 #### Application Settings
 
 ---
+
 <img width="351" height="54" alt="image" src="https://github.com/user-attachments/assets/9c41ec6f-2fa7-433c-a7d9-ef8c79307999" />
+
 ```java
 spring.datasource.url=jdbc:postgresql://localhost:5432/postgres //where the database is located
 spring.datasource.username=postgres //user
