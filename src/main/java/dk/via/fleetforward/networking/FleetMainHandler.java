@@ -69,8 +69,6 @@ public class FleetMainHandler extends FleetServiceProtoGrpc.FleetServiceProtoImp
      */
     private void sendGrpcError(StreamObserver<ResponseProto> observer, StatusTypeProto status, String errorMessage) {
         Any payload =Any.pack(StringValue.of(errorMessage));// convert error message to protobuf message
-        //don't ask me who thought this was not complicated... I want to cry... current hour 3:32AM
-        //Mario
         ResponseProto response = ResponseProto.newBuilder().
                 setStatus(status).
                 setPayload(payload)
@@ -90,12 +88,11 @@ public class FleetMainHandler extends FleetServiceProtoGrpc.FleetServiceProtoImp
             responseObserver.onNext(response);
         } catch (ClassCastException e) {
             sendGrpcError(responseObserver, StatusTypeProto.STATUS_INVALID_PAYLOAD, "Invalid request");
-            return; // 🚫 don't call onCompleted again
+            return;
         } catch (Exception e) {
             sendGrpcError(responseObserver, StatusTypeProto.STATUS_ERROR, e.getMessage());
             return;
         }
-
         try {
             responseObserver.onCompleted();
         } catch (Exception e) {

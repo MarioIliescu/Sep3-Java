@@ -2,9 +2,7 @@ package dk.via.fleetforward.startup;
 
 import dk.via.fleetforward.networking.handlers.CompanyHandler;
 import dk.via.fleetforward.networking.handlers.FleetNetworkHandler;
-import dk.via.fleetforward.repositories.database.CompanyRepository;
 import dk.via.fleetforward.services.company.CompanyServiceDatabase;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
 /**
