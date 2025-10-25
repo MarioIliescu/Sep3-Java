@@ -1,6 +1,6 @@
-# Infrastructure for SEP3 - Java
+SEP3 - Java
 
-- [Infrastructure for SEP3 - Java](#infrastructure-for-sep3---java)
+- [ - Java](#infrastructure-for-sep3---java)
   - [Github Repository with all the code](#github-repository-with-all-the-code)
     - [Click for Windows GitBash install.](#click-for-windows-gitbash-install)
     - [Click for Linux GitBash install.](#click-for-linux-gitbash-install)
@@ -31,8 +31,6 @@
       - [Application Settings](#application-settings)
       - [Pom and dependencies](#pom-and-dependencies)
 
-## [Github Repository with all the code](https://github.com/MarioIliescu/Sep3-Java)  
-
 Open GitBash and clone in the wanted folder for deeper analysis. Work in progress.
 
 ```sh
@@ -49,7 +47,7 @@ git clone https://github.com/MarioIliescu/Sep3-Java
 
 Requests ──► Server ──► MainHandler ──► DesignatedHandler ──► DesignatedService ──► Entity ──► Repository ──► Database
 
-![image in IDE](image.png)
+<img width="479" height="788" alt="image" src="https://github.com/user-attachments/assets/9cf88250-2e91-475f-9d53-59725f227468" />
 
 ### `Request` and `Response`
 
@@ -631,9 +629,7 @@ public interface CompanyRepository extends JpaRepository<Company, Integer>{
 #### Application Settings
 
 ---
-
-![src/java/main/resources/application.proprieties](image-1.png)
-
+<img width="351" height="54" alt="image" src="https://github.com/user-attachments/assets/9c41ec6f-2fa7-433c-a7d9-ef8c79307999" />
 ```java
 spring.datasource.url=jdbc:postgresql://localhost:5432/postgres //where the database is located
 spring.datasource.username=postgres //user
