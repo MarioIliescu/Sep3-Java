@@ -3,6 +3,7 @@
 - [SEP3 - Java](#sep3---java)
   - [Infrastructure of FleetForward](#infrastructure-of-fleetforward)
   - [Documentation parts links](#documentation-parts-links)
+    - [Business Server](#business-server)
     - [Entities and Repositories](#entities-and-repositories)
     - [Handlers and Services](#handlers-and-services)
     - [Server, Main Handler, Service Provider and GlobalContext](#server-main-handler-service-provider-and-globalcontext)
