@@ -1,6 +1,6 @@
 SEP3 - Java
 
-- [ - Java](#infrastructure-for-sep3---java)
+- [ - Java](#Java)
   - [Github Repository with all the code](#github-repository-with-all-the-code)
     - [Click for Windows GitBash install.](#click-for-windows-gitbash-install)
     - [Click for Linux GitBash install.](#click-for-linux-gitbash-install)
