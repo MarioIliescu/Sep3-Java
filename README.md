@@ -3,6 +3,9 @@
 - [SEP3 - Java](#sep3---java)
   - [Infrastructure of FleetForward](#infrastructure-of-fleetforward)
   - [Documentation parts links](#documentation-parts-links)
+    - [Entities and Repositories](#entities-and-repositories)
+    - [Handlers and Services](#handlers-and-services)
+    - [Server, Main Handler, Service Provider and GlobalContext](#server-main-handler-service-provider-and-globalcontext)
   - [File System Overview](#file-system-overview)
   - [Pom and dependencies](#pom-and-dependencies)
 
@@ -12,7 +15,11 @@
 
 ## Documentation parts links
 
+### [Entities and Repositories](https://github.com/MarioIliescu/Sep3-Java/blob/main/EntitiesRepoDocs.md)
 
+### [Handlers and Services](https://github.com/MarioIliescu/Sep3-Java/blob/main/HandlerServiceDocs.md)
+
+### [Server, Main Handler, Service Provider and GlobalContext](https://github.com/MarioIliescu/Sep3-Java/blob/main/ServerDocs.md)
 
 ## File System Overview
 
