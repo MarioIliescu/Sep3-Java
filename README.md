@@ -15,6 +15,8 @@
 
 ## Documentation parts links
 
+### [Business Server](https://github.com/MarioIliescu/SEP3-CSharp)
+
 ### [Entities and Repositories](https://github.com/MarioIliescu/Sep3-Java/blob/main/EntitiesRepoDocs.md)
 
 ### [Handlers and Services](https://github.com/MarioIliescu/Sep3-Java/blob/main/HandlerServiceDocs.md)
