@@ -14,7 +14,7 @@ import dk.via.fleetforward.services.company.CompanyService;
  */
 public class CompanyHandler implements FleetNetworkHandler {
 
-    private CompanyService companyService;
+    private final CompanyService companyService;
 
     public CompanyHandler(CompanyService companyService) {
         this.companyService = companyService;
