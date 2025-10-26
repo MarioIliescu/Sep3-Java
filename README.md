@@ -1,10 +1,6 @@
 SEP3 - Java
 
-- [ - Java](#Java)
-  - [Github Repository with all the code](#github-repository-with-all-the-code)
-    - [Click for Windows GitBash install.](#click-for-windows-gitbash-install)
-    - [Click for Linux GitBash install.](#click-for-linux-gitbash-install)
-    - [Click for Mac Gitbash install.](#click-for-mac-gitbash-install)
+- [Java](#Java)
   - [Infrastructure of FleetForward](#infrastructure-of-fleetforward)
     - [`Request` and `Response`](#request-and-response)
       - [GRPC important notes](#grpc-important-notes)
@@ -30,22 +26,10 @@ SEP3 - Java
     - [Dependencies, application settings and pom](#dependencies-application-settings-and-pom)
       - [Application Settings](#application-settings)
       - [Pom and dependencies](#pom-and-dependencies)
-
-Open GitBash and clone in the wanted folder for deeper analysis. Work in progress.
-
-```sh
-git clone https://github.com/MarioIliescu/Sep3-Java
-```
-
-### [Click for Windows GitBash install.](https://git-scm.com/downloads/win)  
-
-### [Click for Linux GitBash install.](https://git-scm.com/downloads/linux)
-
-### [Click for Mac Gitbash install.](https://git-scm.com/downloads/mac)
-
+        
 ## Infrastructure of FleetForward
 
-Requests ──► Server ──► MainHandler ──► DesignatedHandler ──► DesignatedService ──► Entity ──► Repository ──► Database
+<img width="1706" height="303" alt="image" src="https://github.com/user-attachments/assets/e13e2e68-490d-426b-a78c-cff4fe8d230c" />
 
 <img width="479" height="788" alt="image" src="https://github.com/user-attachments/assets/9cf88250-2e91-475f-9d53-59725f227468" />
 
@@ -56,6 +40,7 @@ Requests ──► Server ──► MainHandler ──► DesignatedHandler ─�
 ` Request ` is send by the client on the C# Server side.
 They contain gRPC objects of type `Request` and are met with objects of type `Response`.  
 Instead of `string` to clarify which `Handler` will be used or which `Action` is required or the `Status` returned by the `Server`, enums have been used, if another `ActionType`, `HandlerType` or `StatusType` they need to be added to the list. Enums are better for consistency, making sure typos do not sneak into the class and much easier to debug.
+![Uploading FlowchartJava.svg…]()
 
 ```protobuf
 syntax = "proto3";
