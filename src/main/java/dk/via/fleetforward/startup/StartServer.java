@@ -19,7 +19,6 @@ public class StartServer {
         FleetServer fleetServer = GlobalContext.getContext().getBean(FleetServer.class);
         fleetServer.start();
         System.out.println("Fleetforward gRPC Server started");
-        System.out.println("You did it choom");
     }
 
 }
